@@ -2,7 +2,7 @@
 resolver = "3"
 members = ["backend", "db"]
 
-[dependencies]
+[workspace.dependencies]
 axum = "0.8.9"
 reqwest = "0.13.4"
 tokio = { version =  "1.52.3", features=["full"] }
