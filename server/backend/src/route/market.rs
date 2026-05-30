@@ -1,16 +1,15 @@
 use axum::{Json, http::StatusCode};
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 
 #[derive(Deserialize)]
 struct BuyPosition {
     username: String,
 }
 
-pub async fn buy_position(Json(payload): Json<BuyPosition>)  
-// -> (StatusCode)
- {
+#[derive(Serialize)]
+struct BuyPositionResult {}
 
- }
+pub async fn buy_position(Json(payload): Json<BuyPosition>) -> (StatusCode, Json<BuyPositionResult>) {}
 
 pub async fn sell_position() {}
 pub async fn split_position() {}
