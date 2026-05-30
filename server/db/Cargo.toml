@@ -1,0 +1,12 @@
+[package]
+name = "db"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+sqlx = "0.9.0"
+axum = [workspace.dependencies]
+reqwest = [workspace.dependencies]
+tokio = [workspace.dependencies]
+serde = [workspace.dependencies]
+serde_json = [workspace.dependencies]

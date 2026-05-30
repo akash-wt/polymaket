@@ -1,0 +1,11 @@
+[package]
+name = "backend"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = [workspace.dependencies]
+reqwest = [workspace.dependencies]
+tokio = [workspace.dependencies]
+serde = [workspace.dependencies]
+serde_json = [workspace.dependencies]
