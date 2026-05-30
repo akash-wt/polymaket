@@ -9,7 +9,6 @@ struct BuyPosition {
 #[derive(Serialize)]
 struct BuyPositionResult {}
 
-pub async fn buy_position(Json(payload): Json<BuyPosition>) -> (StatusCode, Json<BuyPositionResult>) {}
 
 pub async fn sell_position() {}
 pub async fn split_position() {}
